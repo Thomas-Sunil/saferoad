@@ -7,6 +7,8 @@ import Dashboard from "./pages/Dashboard";
 import RoutePage from "./pages/RoutePage"; // Add RoutePage
 
 import "./index.css";
+import LoginPage from "./pages/LoginPage";
+import SignUpPage from "./pages/SignUpPage";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -15,7 +17,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/route" element={<RoutePage />} /> {/* Add Route Page */}
+        <Route path="/route" element={<RoutePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/mvd" element={<SignUpPage />} />
       </Routes>
     </Router>
   </React.StrictMode>

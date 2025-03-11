@@ -9,6 +9,7 @@ import RoutePage from "./pages/RoutePage"; // Add RoutePage
 import "./index.css";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
+import AccidentDashboard from "./pages/AccidentDashboard";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/route" element={<RoutePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/mvd" element={<SignUpPage />} />
+        <Route path="/accident" element={<AccidentDashboard />} />
       </Routes>
     </Router>
   </React.StrictMode>
